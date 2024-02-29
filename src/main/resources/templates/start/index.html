@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Start page</title>
+</head>
+<body>
+<div id="wrapper" th:each="sensorDTO : ${sensors.getSensors()}">
+    <span th:text="${sensorDTO.getName}"></span>
+</div>
+</body>
+</html>
